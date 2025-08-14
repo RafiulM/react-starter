@@ -9,6 +9,7 @@ import {
   Users,
   Activity,
   FileText,
+  BookOpen,
   Menu,
   X,
 } from "lucide-react";
@@ -22,6 +23,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { icon: Activity, label: "Analytics", to: "/analytics" },
     { icon: Users, label: "Users", to: "/users" },
     { icon: FileText, label: "Reports", to: "/reports" },
+    { icon: BookOpen, label: "Documentation", to: "/docs" },
     { icon: Settings, label: "Settings", to: "/settings" },
   ];
 

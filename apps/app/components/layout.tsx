@@ -2,7 +2,7 @@
 /* SPDX-License-Identifier: MIT */
 
 import { Button } from "@repo/ui";
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import {
   Home,
   Settings,
@@ -16,15 +16,26 @@ import { useState } from "react";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const location = useLocation();
 
   const sidebarItems = [
-    { icon: Home, label: "Dashboard", to: "/" },
+    { icon: Home, label: "Home", to: "/" },
     { icon: Activity, label: "Analytics", to: "/analytics" },
     { icon: Users, label: "Users", to: "/users" },
     { icon: FileText, label: "Reports", to: "/reports" },
     { icon: Settings, label: "Settings", to: "/settings" },
   ];
 
+  // Use minimal layout for landing page
+  if (location.pathname === '/') {
+    return (
+      <div className="min-h-screen bg-background">
+        {children}
+      </div>
+    );
+  }
+
+  // Use full dashboard layout for other pages
   return (
     <div className="h-screen flex bg-background">
       {/* Sidebar */}

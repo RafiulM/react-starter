@@ -33,6 +33,7 @@ This starter kit uses a thoughtfully organized monorepo structure that promotes 
 - [`apps/web/`](./apps/web) — Astro marketing website for static site generation
 - [`apps/api/`](./apps/api) — tRPC API server powered by Hono framework
 - [`apps/edge/`](./apps/edge) — Cloudflare Workers entry point for edge deployment
+- **Blog Feature** — Complete CRUD blog system with admin dashboard and TanStack Query integration ([guide](./docs/blog-feature-guide.md))
 - [`packages/core/`](./packages/core) — Shared TypeScript types and utilities
 - [`packages/ui/`](./packages/ui) — Shared UI components with shadcn/ui management utilities
 - [`packages/ws-protocol/`](./packages/ws-protocol) — WebSocket protocol template with type-safe messaging

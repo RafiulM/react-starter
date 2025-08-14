@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Draft Blog Feature Usage Guide",
+    "description": "Create comprehensive documentation guiding users on how to use the new blog app feature, including admin CRUD operations and client-side fetching with TanStack Query.",
+    "details": "Write a new markdown file (e.g., docs/blog-feature-guide.md) that covers:\n- Overview of the blog app feature\n- How to access and use the admin dashboard for CRUD operations\n- Steps to perform create, read, update, and delete actions\n- How TanStack Query is used for client-side data fetching\n- Screenshots or code snippets where helpful\nEnsure the guide is clear, concise, and suitable for both new and experienced contributors.",
+    "status": "pending",
+    "test_strategy": "Review the documentation for completeness, clarity, and accuracy. Ask a team member unfamiliar with the feature to follow the guide and provide feedback. Ensure all steps are reproducible.",
+    "priority": "high",
+    "ordinal": 0,
+    "task_group_id": "c17478c4-20be-4c48-80e9-d41b73d00e2a",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "e8fec51f-c68d-4a81-a8f4-54e0e0978b83",
+    "created_at": "2025-08-14T04:32:03.382660Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  },
+  {
+    "title": "Integrate Documentation into Main Docs Navigation",
+    "description": "Add the new blog feature usage guide to the main documentation index or sidebar for discoverability.",
+    "details": "Update the main README.md or documentation index (e.g., docs/README.md or docs/sidebar.md) to include a link to the new blog feature usage guide. Ensure the link is correctly formatted and appears in a logical location within the documentation structure.",
+    "status": "pending",
+    "test_strategy": "Verify that the new guide appears in the documentation navigation and that the link works as expected. Confirm with a fresh clone that the guide is discoverable.",
+    "priority": "medium",
+    "ordinal": 1,
+    "task_group_id": "c17478c4-20be-4c48-80e9-d41b73d00e2a",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "6ef671cf-d859-4666-83ce-178348fe310c",
+    "created_at": "2025-08-14T04:32:03.382671Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  },
+  {
+    "title": "Document API Endpoints and Example Requests",
+    "description": "Provide detailed API documentation for the blog feature, including endpoint descriptions, request/response formats, and example curl commands.",
+    "details": "In the blog feature guide or a dedicated API reference section, list all relevant API endpoints for the blog CRUD operations. For each endpoint, document:\n- HTTP method and path\n- Required authentication (JWT)\n- Request parameters and body\n- Example request and response payloads\n- Example curl commands for each operation\nHighlight any error cases or special considerations.",
+    "status": "pending",
+    "test_strategy": "Test each documented API example to ensure accuracy. Use curl or Postman to verify that the requests and responses match the documentation. Peer review for technical correctness.",
+    "priority": "medium",
+    "ordinal": 2,
+    "task_group_id": "c17478c4-20be-4c48-80e9-d41b73d00e2a",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "699b713e-ab2d-40bb-b5ce-33ca1889c2fa",
+    "created_at": "2025-08-14T04:32:03.382675Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  }
+]

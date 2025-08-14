@@ -28,6 +28,8 @@ export default withMermaid(
             { text: "Getting Started", link: "/getting-started" },
             { text: "Database Schema", link: "/database-schema" },
             { text: "Deployment", link: "/deployment" },
+            { text: "Blog Feature Guide", link: "/blog-feature-guide" },
+            { text: "Blog API Reference", link: "/blog-api-reference" },
           ],
         },
       ],

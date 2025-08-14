@@ -3,12 +3,14 @@
 
 import * as invitation from "./invitation";
 import * as organization from "./organization";
+import * as post from "./post";
 import * as team from "./team";
 import * as user from "./user";
 
 export const schema = {
   ...invitation,
   ...organization,
+  ...post,
   ...team,
   ...user,
 } as const;

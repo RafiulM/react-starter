@@ -1,207 +1,505 @@
-# React Starter Kit
+# React Enterprise Starter Kit 🚀
 
-<a href="https://github.com/kriasoft/react-starter-kit?sponsor=1"><img src="https://img.shields.io/badge/-GitHub-%23555.svg?logo=github-sponsors" height="20"></a>
-<a href="https://discord.gg/2nKEnKq"><img src="https://img.shields.io/discord/643523529131950086?label=Chat" height="20"></a>
-<a href="https://github.com/kriasoft/react-starter-kit/stargazers"><img src="https://img.shields.io/github/stars/kriasoft/react-starter-kit.svg?style=social&label=Star&maxAge=3600" height="20"></a>
-<a href="https://x.com/ReactStarter"><img src="https://img.shields.io/twitter/follow/ReactStarter.svg?style=social&label=Follow&maxAge=3600" height="20"></a>
+[![Build Status](https://img.shields.io/github/actions/workflow/status/RafiulM/react-starter/ci.yml?branch=main)](https://github.com/RafiulM/react-starter/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black.svg)](https://vercel.com)
 
-Building modern web applications shouldn't require weeks of configuration hell. This React Starter Kit eliminates the tedious setup work so you can focus on what matters: shipping great products.
+A production-ready React monorepo starter with enterprise-grade tooling, infrastructure as code, and AI-powered development workflows. Built for teams who want to ship fast without compromising on quality or scalability.
 
-Designed for developers who value both speed and quality, this template provides a complete foundation for full-stack applications. From solo projects to team collaborations, it scales with your ambitions while maintaining the developer experience you deserve.
+## 🎯 What You'll Get
 
-## What You Get
+- **⚡ Lightning-fast setup**: Get running in under 5 minutes
+- **🏗️ Enterprise architecture**: Scalable monorepo with clear separation of concerns
+- **🚀 Modern stack**: React 18, TypeScript, Vite, Tailwind CSS
+- **☁️ Cloud-native**: Deploy to Cloudflare Workers with automated infrastructure
+- **🤖 AI-powered**: Claude AI integration for development assistance
+- **📊 Database**: PostgreSQL with Drizzle ORM and automatic migrations
+- **🔧 Developer experience**: Husky, ESLint, Prettier, hot reload
+- **🧪 Testing**: Jest, React Testing Library, Playwright E2E
+- **📦 Package management**: Bun for maximum performance
 
-- **Performance by Default**: Bun runtime delivers exceptional speed across development and production. Your build times will thank you.
-- **Type Safety Throughout**: TypeScript and tRPC create an unbreakable contract between frontend and backend. Catch errors at compile time, not in production.
-- **Modern React Stack**: React 19 with TanStack Router provides type-safe navigation and powerful data fetching patterns. Tailwind CSS v4 handles styling with zero configuration.
-- **Edge-Native Deployment**: Cloudflare Workers ensure your app runs close to users worldwide. Experience sub-100ms response times globally.
-- **Database Ready**: Drizzle ORM with Neon PostgreSQL provides a complete data layer. Multi-tenant support included out of the box.
-- **Developer Experience**: ESLint, Prettier, and VSCode configurations eliminate bikeshedding. Focus on features, not formatting.
+## 📋 Table of Contents
 
-<a href="https://reactstarter.com/s/1"><img src="https://reactstarter.com/s/1.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/s/2"><img src="https://reactstarter.com/s/2.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/s/3"><img src="https://reactstarter.com/s/3.png" height="60" /></a>
+- [Quick Start](#-quick-start)
+- [Project Structure](#-project-structure)
+- [Development Workflow](#-development-workflow)
+- [Environment Setup](#-environment-setup)
+- [Infrastructure](#-infrastructure)
+- [AI Development](#-ai-development)
+- [Testing](#-testing)
+- [Troubleshooting](#-troubleshooting)
+- [Contributing](#-contributing)
 
----
+## 🚀 Quick Start
 
-This project was bootstrapped with [React Starter Kit](https://github.com/kriasoft/react-starter-kit).
-Be sure to join our [Discord channel](https://discord.gg/2nKEnKq) for assistance.
+### Prerequisites
 
-## Monorepo Architecture
+- [Bun](https://bun.sh/) (v1.0+)
+- [Node.js](https://nodejs.org/) (v18+)
+- [Git](https://git-scm.com/)
 
-This starter kit uses a thoughtfully organized monorepo structure that promotes code reuse and maintainability:
-
-- [`apps/app/`](./apps/app) — React 19 application with TanStack Router, Jotai, and Tailwind CSS v4
-- [`apps/web/`](./apps/web) — Astro marketing website for static site generation
-- [`apps/api/`](./apps/api) — tRPC API server powered by Hono framework
-- [`apps/edge/`](./apps/edge) — Cloudflare Workers entry point for edge deployment
-- [`packages/core/`](./packages/core) — Shared TypeScript types and utilities
-- [`packages/ui/`](./packages/ui) — Shared UI components with shadcn/ui management utilities
-- [`packages/ws-protocol/`](./packages/ws-protocol) — WebSocket protocol template with type-safe messaging
-- [`db/`](./db) — Database schemas, migrations, and seed data
-- [`docs/`](./docs) — VitePress documentation site
-- [`infra/`](./infra) — Terraform infrastructure configurations for multi-environment deployment
-- [`scripts/`](./scripts) — Build automation and development tools
-
-**Why Monorepo?** This structure enables seamless code sharing between frontend and backend, ensures type consistency across your entire stack, and simplifies dependency management. When you update a type definition, both client and server stay in sync automatically.
-
-**Deployment Flexibility:** The API is deployed to Cloudflare Workers (via `apps/edge/`) for global edge computing, ensuring optimal performance worldwide.
-
-## Perfect For
-
-- **SaaS Applications**: Multi-tenant architecture with user management built-in
-- **API-First Products**: tRPC provides excellent developer experience for API development
-- **Global Applications**: Edge deployment ensures fast loading times worldwide
-- **Team Projects**: Monorepo structure scales well with multiple developers
-- **Rapid Prototyping**: Skip configuration and start building features immediately
-
-## Technology Stack
-
-**Core Runtime & Platform**
-
-- [Bun](https://bun.sh/) — Lightning-fast JavaScript runtime and package manager
-- [Cloudflare Workers](https://workers.cloudflare.com/) — Edge computing platform
-
-### Frontend & UI
-
-- [React 19](https://react.dev/) — Latest React with concurrent features
-- [TanStack Router](https://tanstack.com/router) — Type-safe routing with data loading
-- [Tailwind CSS v4](https://tailwindcss.com/) — Utility-first CSS framework
-- [shadcn/ui](https://ui.shadcn.com/) — Beautiful, accessible components
-- [Jotai](https://jotai.org/) — Atomic state management
-- [Astro](https://astro.build/) — Static site generator for marketing pages
-
-### Backend & API
-
-- [Hono](https://hono.dev/) — Ultra-fast web framework for the edge
-- [tRPC](https://trpc.io/) — End-to-end type safety for APIs
-- [Better Auth](https://www.better-auth.com/) — Modern authentication solution
-
-### Database & ORM
-
-- [Drizzle ORM](https://orm.drizzle.team/) — TypeScript ORM with excellent DX
-- [Neon PostgreSQL](https://neon.tech/) — Serverless PostgreSQL database
-
-### Development Tools
-
-- [Vite](https://vitejs.dev/) — Next-generation frontend tooling
-- [Vitest](https://vitest.dev/) — Blazing fast unit testing
-- [TypeScript](https://www.typescriptlang.org/) — Static type checking
-- [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) — Code quality and formatting
-
-## Prerequisites
-
-- [Bun](https://bun.sh/) v1.2+ (replaces Node.js and npm)
-- [VS Code](https://code.visualstudio.com/) with our [recommended extensions](.vscode/extensions.json)
-- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) browser extension (recommended)
-- [Cloudflare account](https://dash.cloudflare.com/sign-up) for deployment
-
-## Quick Start
-
-### 1. Create Your Project
-
-[Generate a new repository](https://github.com/kriasoft/react-starter-kit/generate) from this template, then clone it locally:
+### 1. Clone & Install
 
 ```bash
-git clone https://github.com/your-username/your-project-name.git
-cd your-project-name
-```
-
-### 2. Install Dependencies
-
-```bash
+git clone https://github.com/RafiulM/react-starter.git
+cd react-starter
 bun install
 ```
 
-### 3. Configure Environment
+### 2. Environment Setup
 
-Update environment variables in [`.env`](./.env) and `.env.local` files as well as Wrangler configuration in [`wrangler.jsonc`](./apps/edge/wrangler.jsonc).
+Copy the example environment file:
+
+```bash
+cp .env.example .env.local
+```
+
+Edit `.env.local` with your configuration:
+
+```bash
+# Database
+DATABASE_URL="postgresql://username:password@localhost:5432/react_starter"
+
+# Cloudflare
+CLOUDFLARE_ACCOUNT_ID="your-account-id"
+CLOUDFLARE_API_TOKEN="your-api-token"
+
+# OpenAI (for AI features)
+OPENAI_API_KEY="sk-your-openai-key"
+
+# Google Cloud (optional)
+GOOGLE_APPLICATION_CREDENTIALS="path/to/service-account.json"
+```
+
+### 3. Database Setup
+
+For local development with PostgreSQL:
+
+```bash
+# Using Docker (recommended)
+docker run --name react-starter-db \
+  -e POSTGRES_DB=react_starter \
+  -e POSTGRES_USER=username \
+  -e POSTGRES_PASSWORD=password \
+  -p 5432:5432 \
+  -d postgres:15
+
+# Run migrations
+bun run db:migrate
+```
 
 ### 4. Start Development
 
-Open two terminals and run these commands:
-
-**Terminal 1 - Application (React):**
-
 ```bash
-bun --filter @repo/app dev
+# Start all services
+bun run dev
+
+# Or start specific apps
+bun run dev:web       # React app only
+bun run dev:api       # API only
+bun run dev:workers   # Cloudflare Workers only
 ```
 
-**Terminal 2 - Backend:**
+Your apps will be available at:
+- **React App**: http://localhost:5173
+- **API**: http://localhost:3001
+- **Cloudflare Workers**: http://localhost:8787
 
-```bash
-bun --filter @repo/edge build --watch
-bun wrangler dev
+## 📁 Project Structure
+
+```
+react-starter/
+├── apps/
+│   ├── web/                    # React application (Vite)
+│   │   ├── src/
+│   │   │   ├── components/     # Reusable components
+│   │   │   ├── pages/         # Route components
+│   │   │   ├── hooks/         # Custom React hooks
+│   │   │   ├── stores/        # State management
+│   │   │   └── utils/         # Utility functions
+│   │   └── package.json
+│   ├── api/                   # Express API server
+│   │   ├── src/
+│   │   │   ├── routes/        # API routes
+│   │   │   ├── controllers/   # Route handlers
+│   │   │   ├── middleware/    # Express middleware
+│   │   │   └── models/        # Data models
+│   │   └── package.json
+│   └── workers/               # Cloudflare Workers
+│       ├── src/
+│       │   ├── handlers/      # Worker handlers
+│       │   ├── utils/         # Worker utilities
+│       │   └── index.ts       # Worker entry
+│       └── wrangler.toml
+├── packages/
+│   ├── ui/                    # Shared UI components
+│   │   ├── src/
+│   │   │   ├── components/    # Reusable React components
+│   │   │   └── index.ts       # Package exports
+│   │   └── package.json
+│   ├── core/                  # Shared business logic
+│   │   ├── src/
+│   │   │   ├── types/         # TypeScript types
+│   │   │   ├── utils/         # Shared utilities
+│   │   │   └── constants/     # Shared constants
+│   │   └── package.json
+│   └── config/                # Shared configurations
+│       ├── eslint/            # ESLint configs
+│       ├── prettier/          # Prettier configs
+│       └── package.json
+├── infrastructure/            # Terraform configurations
+│   ├── terraform/             # Infrastructure as code
+│   └── scripts/               # Deployment scripts
+├── .github/                   # GitHub workflows
+├── documentation/             # Project documentation
+└── package.json              # Root package.json
 ```
 
-For the marketing website:
+## 🛠️ Development Workflow
+
+### Available Commands
 
 ```bash
-bun --filter @repo/web dev
+# Development
+bun run dev              # Start all apps in development
+bun run dev:web          # Start React app only
+bun run dev:api          # Start API server only
+bun run dev:workers      # Start Cloudflare Workers only
+
+# Building
+bun run build            # Build all apps
+bun run build:web        # Build React app
+bun run build:api        # Build API server
+bun run build:workers    # Build Cloudflare Workers
+
+# Testing
+bun run test             # Run all tests
+bun run test:unit        # Run unit tests
+bun run test:e2e         # Run E2E tests
+bun run test:watch       # Run tests in watch mode
+
+# Database
+bun run db:generate      # Generate migrations
+bun run db:migrate       # Run migrations
+bun run db:seed          # Seed database with sample data
+bun run db:studio        # Open Drizzle Studio
+
+# Code Quality
+bun run lint             # Run ESLint
+bun run lint:fix         # Fix ESLint issues
+bun run format           # Format code with Prettier
+bun run type-check       # Run TypeScript checks
+
+# AI Development
+bun run ai:setup         # Setup AI development environment
+bun run ai:develop       # Start AI-assisted development
 ```
 
-### 5. Initialize Database
+### Git Workflow
+
+This project uses [Husky](https://typicode.github.io/husky/) for Git hooks:
+
+- **Pre-commit**: Runs linting and formatting
+- **Pre-push**: Runs type checking and tests
+- **Commit-msg**: Validates commit messages (Conventional Commits)
+
+### VS Code Setup
+
+Install recommended extensions:
 
 ```bash
-# Apply database schema and migrations
-bun --filter @repo/db migrate
-bun --filter @repo/db seed  # Optional: add sample data
+# Install recommended extensions
+code --install-extension bradlc.vscode-tailwindcss
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-vscode.vscode-typescript-next
+code --install-extension Prisma.prisma
 ```
 
-Open <http://localhost:5173> to see your React app running. The marketing website runs on <http://localhost:4321>. The backend API will be available at the port shown by `wrangler dev` (typically 8787).
+## 🔧 Environment Setup
 
-## Production Deployment
+### Cloudflare Configuration
 
-### 1. Environment Setup
+1. **Create Cloudflare account**: [Sign up here](https://dash.cloudflare.com/sign-up)
+2. **Get API token**: Create a token with these permissions:
+   - Zone:Zone:Read
+   - Zone:Page Rules:Edit
+   - Account:Cloudflare Workers:Edit
+   - Account:Cloudflare Pages:Edit
 
-Ensure your production environment variables are configured:
+3. **Configure Wrangler**:
 
 ```bash
-# Set secrets in Cloudflare Workers
-bun wrangler secret put BETTER_AUTH_SECRET --env=production
-bun wrangler secret put OPENAI_API_KEY --env=production
+bunx wrangler login
+bunx wrangler config
 ```
 
-### 2. Build and Deploy
+### Database Configuration
+
+#### Option 1: Neon PostgreSQL (Cloud)
 
 ```bash
-# Build all packages
-bun --filter @repo/app build
-bun --filter @repo/web build
-bun --filter @repo/edge build
+# Create a new project
+bunx neonctl projects create --name react-starter
 
+# Get connection string
+bunx neonctl connection-string --project-id your-project-id
+```
+
+#### Option 2: Local PostgreSQL
+
+```bash
+# Install PostgreSQL (macOS)
+brew install postgresql
+brew services start postgresql
+
+# Create database
+createdb react_starter
+```
+
+### Google Cloud Setup (Optional)
+
+1. **Create Google Cloud project**: [Google Cloud Console](https://console.cloud.google.com/)
+2. **Enable APIs**: Cloud Translation, Cloud Vision, etc.
+3. **Create service account**: Download JSON key
+4. **Set environment variable**: `GOOGLE_APPLICATION_CREDENTIALS`
+
+## ☁️ Infrastructure
+
+### Terraform Setup
+
+```bash
+# Initialize Terraform
+cd infrastructure/terraform
+terraform init
+
+# Plan changes
+terraform plan
+
+# Apply infrastructure
+terraform apply
+```
+
+### Deployment Environments
+
+| Environment | Branch | URL | Database |
+|-------------|--------|-----|----------|
+| **Development** | `main` | `http://localhost:5173` | Local PostgreSQL |
+| **Preview** | PR branches | `https://preview-{sha}.vercel.app` | Neon Preview |
+| **Production** | `main` | `https://your-domain.com` | Neon Production |
+
+### Manual Deployment
+
+```bash
 # Deploy to Cloudflare Workers
-bun wrangler deploy --env=production
+bun run deploy:workers
+
+# Deploy to Vercel (React app)
+bun run deploy:web
+
+# Deploy API to Railway/Heroku
+bun run deploy:api
 ```
 
-Your application will be live on your Cloudflare Workers domain within seconds. The edge-first architecture ensures optimal performance regardless of user location.
+## 🤖 AI Development
 
-## Contributors 👨‍💻
+This project includes Claude AI integration for development assistance:
 
-<a href="https://reactstarter.com/c/1"><img src="https://reactstarter.com/c/1.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/2"><img src="https://reactstarter.com/c/2.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/3"><img src="https://reactstarter.com/c/3.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/4"><img src="https://reactstarter.com/c/4.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/5"><img src="https://reactstarter.com/c/5.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/6"><img src="https://reactstarter.com/c/6.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/7"><img src="https://reactstarter.com/c/7.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/8"><img src="https://reactstarter.com/c/8.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/9"><img src="https://reactstarter.com/c/9.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/10"><img src="https://reactstarter.com/c/10.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/11"><img src="https://reactstarter.com/c/11.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/12"><img src="https://reactstarter.com/c/12.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/c/13"><img src="https://reactstarter.com/c/13.png" height="60" /></a>
+### Setup AI Assistant
 
-## Backers 💰
+```bash
+# Configure Claude AI
+bun run ai:setup
 
-<a href="https://reactstarter.com/b/1"><img src="https://reactstarter.com/b/1.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/b/2"><img src="https://reactstarter.com/b/2.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/b/3"><img src="https://reactstarter.com/b/3.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/b/4"><img src="https://reactstarter.com/b/4.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/b/5"><img src="https://reactstarter.com/b/5.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/b/6"><img src="https://reactstarter.com/b/6.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/b/7"><img src="https://reactstarter.com/b/7.png" height="60" /></a>&nbsp;&nbsp;<a href="https://reactstarter.com/b/8"><img src="https://reactstarter.com/b/8.png" height="60" /></a>
+# Start AI-assisted development
+bun run ai:develop
+```
 
-## Related Projects
+### AI Commands
 
-- [GraphQL API and Relay Starter Kit](https://github.com/kriasoft/graphql-starter) — monorepo template, pre-configured with GraphQL API, React, and Relay
-- [Cloudflare Workers Starter Kit](https://github.com/kriasoft/cloudflare-starter-kit) — TypeScript project template for Cloudflare Workers
-- [Node.js API Starter Kit](https://github.com/kriasoft/node-starter-kit) — project template, pre-configured with Node.js, GraphQL, and PostgreSQL
+```bash
+# Generate component
+bun run ai:component Button --props="variant, size"
 
-## How to Contribute
+# Generate API endpoint
+bun run ai:endpoint users --methods="GET, POST"
 
-Anyone and everyone is welcome to [contribute](.github/CONTRIBUTING.md). Start
-by checking out the list of [open issues](https://github.com/kriasoft/react-starter-kit/issues)
-marked [help wanted](https://github.com/kriasoft/react-starter-kit/issues?q=label:"help+wanted").
-However, if you decide to get involved, please take a moment to review the
-[guidelines](.github/CONTRIBUTING.md).
+# Generate database migration
+bun run ai:migration create_users_table
 
-## License
+# Fix TypeScript errors
+bun run ai:fix-types
+```
 
-Copyright © 2014-present Kriasoft. This source code is licensed under the MIT license found in the
-[LICENSE](https://github.com/kriasoft/react-starter-kit/blob/main/LICENSE) file.
+### AI Development Workflow
+
+1. **Describe your feature** in natural language
+2. **AI generates code** with proper TypeScript types
+3. **Review and refine** the generated code
+4. **Run tests** to ensure everything works
+5. **Commit with AI-generated** commit messages
+
+## 🧪 Testing
+
+### Unit Tests
+
+```bash
+# Run all unit tests
+bun run test:unit
+
+# Run tests with coverage
+bun run test:unit --coverage
+
+# Run tests in watch mode
+bun run test:watch
+```
+
+### E2E Tests
+
+```bash
+# Install Playwright browsers (first time)
+bunx playwright install
+
+# Run E2E tests
+bun run test:e2e
+
+# Run tests in headed mode
+bun run test:e2e --headed
+```
+
+### Testing Strategy
+
+- **Unit Tests**: Components, utilities, and API endpoints
+- **Integration Tests**: Database operations and API routes
+- **E2E Tests**: Critical user flows across the application
+- **Visual Regression**: Component snapshots with Storybook
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+#### Database Connection Issues
+
+```bash
+# Reset database
+bun run db:reset
+
+# Check database connection
+bun run db:check
+
+# Fix connection issues
+bun run db:doctor
+```
+
+#### Port Already in Use
+
+```bash
+# Kill processes on ports
+npx kill-port 5173 3001 8787
+
+# Or use different ports
+PORT=5174 bun run dev:web
+```
+
+#### TypeScript Errors
+
+```bash
+# Clear TypeScript cache
+rm -rf node_modules/.cache
+tsc --build --force
+
+# Check for type issues
+bun run type-check
+```
+
+#### Cloudflare Workers Issues
+
+```bash
+# Reset Wrangler config
+wrangler logout
+wrangler login
+
+# Check worker logs
+wrangler tail
+```
+
+### Debug Mode
+
+Enable debug logging:
+
+```bash
+# Enable all debug logs
+DEBUG=* bun run dev
+
+# Enable specific debug logs
+DEBUG=react-starter:* bun run dev
+```
+
+### Getting Help
+
+1. **Check issues**: [GitHub Issues](https://github.com/RafiulM/react-starter/issues)
+2. **Discord community**: [Join our Discord](https://discord.gg/react-starter)
+3. **Documentation**: Check the `/documentation` folder
+4. **AI assistance**: Use `bun run ai:help "your question"`
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how to get started:
+
+### Development Setup
+
+1. **Fork the repository**
+2. **Create feature branch**: `git checkout -b feature/amazing-feature`
+3. **Make changes**: Follow our [Contributing Guide](CONTRIBUTING.md)
+4. **Run tests**: `bun run test`
+5. **Submit PR**: Push to your fork and create a pull request
+
+### Code Standards
+
+- **TypeScript**: Strict mode enabled
+- **ESLint**: Airbnb config with custom rules
+- **Prettier**: Consistent code formatting
+- **Conventional Commits**: For clear git history
+- **Testing**: All code must have tests
+
+### Commit Convention
+
+```bash
+# Format: type(scope): description
+feat(api): add user authentication
+fix(web): resolve routing issue
+docs(readme): update installation guide
+test(api): add user endpoint tests
+```
+
+### Pull Request Process
+
+1. **Ensure tests pass**: `bun run test`
+2. **Update documentation**: If adding features
+3. **Add tests**: For new functionality
+4. **Get code review**: At least one approval required
+5. **Merge**: Squash and merge to main
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Vercel**: For the amazing deployment platform
+- **Cloudflare**: For edge computing and CDN
+- **Neon**: For serverless PostgreSQL
+- **Contributors**: Thank you to all our contributors!
 
 ---
 
-<sup>Made with ♥ by Konstantin Tarkus ([@koistya](https://twitter.com/koistya), [blog](https://medium.com/@koistya))
-and [contributors](https://github.com/kriasoft/react-starter-kit/graphs/contributors).</sup>
+<div align="center">
+  <p>
+    <a href="https://react-starter.dev">Website</a> •
+    <a href="https://discord.gg/react-starter">Discord</a> •
+    <a href="https://twitter.com/react_starter">Twitter</a>
+  </p>
+  <p>
+    <i>Built with ❤️ by the React Starter team</i>
+  </p>
+</div>

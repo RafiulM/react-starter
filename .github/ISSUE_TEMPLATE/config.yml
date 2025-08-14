@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "❓ Questions & Support"
+    url: https://github.com/RafiulM/react-starter/discussions
+    about: Please ask questions and start discussions here
+  - name: "📖 Documentation"
+    url: https://github.com/RafiulM/react-starter/blob/main/CONTRIBUTING.md
+    about: Check our contribution guidelines for help with contributing
+  - name: "💬 Discord Community"
+    url: https://discord.gg/react-starter
+    about: Join our Discord community for real-time chat and support

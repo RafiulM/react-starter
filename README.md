@@ -444,41 +444,158 @@ DEBUG=react-starter:* bun run dev
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how to get started:
+We welcome contributions! This project follows a comprehensive contribution process designed to maintain high code quality and ensure smooth collaboration.
 
-### Development Setup
+### 🚀 Quick Start Contributing
 
-1. **Fork the repository**
-2. **Create feature branch**: `git checkout -b feature/amazing-feature`
-3. **Make changes**: Follow our [Contributing Guide](CONTRIBUTING.md)
-4. **Run tests**: `bun run test`
-5. **Submit PR**: Push to your fork and create a pull request
+1. **Fork the repository** on GitHub
+2. **Clone your fork**: `git clone https://github.com/YOUR_USERNAME/react-starter.git`
+3. **Create feature branch**: `git checkout -b feature/amazing-feature`
+4. **Set up development**: `bun install && cp .env.example .env.local`
+5. **Make changes**: Follow our comprehensive [Contributing Guide](CONTRIBUTING.md)
+6. **Test thoroughly**: `bun run test && bun run type-check`
+7. **Submit PR**: Push to your fork and create a pull request
 
-### Code Standards
+### 📋 Ways to Contribute
 
-- **TypeScript**: Strict mode enabled
-- **ESLint**: Airbnb config with custom rules
-- **Prettier**: Consistent code formatting
-- **Conventional Commits**: For clear git history
-- **Testing**: All code must have tests
+- **🐛 Bug Reports**: Use our [Bug Report Template](https://github.com/RafiulM/react-starter/issues/new?template=bug_report.yml)
+- **✨ Feature Requests**: Use our [Feature Request Template](https://github.com/RafiulM/react-starter/issues/new?template=feature_request.yml)
+- **📖 Documentation**: Improve docs, README, or add examples
+- **🧪 Testing**: Add tests, improve test coverage
+- **🔧 Code**: Fix bugs, implement features, refactor code
+- **🎨 Design**: Improve UI/UX, add new components
+- **📊 Performance**: Optimize queries, improve bundle size
+- **🔒 Security**: Report vulnerabilities, improve security
 
-### Commit Convention
+### 🔧 Development Guidelines
 
+#### Code Standards
+- **TypeScript**: Strict mode enabled with comprehensive type checking
+- **ESLint**: Airbnb config with custom project-specific rules
+- **Prettier**: Consistent code formatting across the entire codebase
+- **Testing**: Minimum 80% code coverage required for new features
+- **Documentation**: All public APIs and complex functions must be documented
+
+#### Commit Convention (Conventional Commits)
 ```bash
 # Format: type(scope): description
-feat(api): add user authentication
-fix(web): resolve routing issue
-docs(readme): update installation guide
-test(api): add user endpoint tests
+feat(web): add dark mode toggle component
+fix(api): resolve user authentication token expiration
+docs(readme): update installation instructions for Windows
+test(ui): add visual regression tests for Button component
+refactor(utils): simplify date formatting utility functions
+style(web): format code with updated Prettier configuration
+chore(deps): update React to version 18.3.0
 ```
 
-### Pull Request Process
+#### Branch Naming Strategy
+- `feature/description` - New features
+- `fix/description` - Bug fixes
+- `docs/description` - Documentation updates
+- `refactor/description` - Code refactoring
+- `test/description` - Test improvements
+- `hotfix/description` - Critical production fixes
 
-1. **Ensure tests pass**: `bun run test`
-2. **Update documentation**: If adding features
-3. **Add tests**: For new functionality
-4. **Get code review**: At least one approval required
-5. **Merge**: Squash and merge to main
+### 🔄 Pull Request Process
+
+1. **Pre-submission Checklist**:
+   - [ ] All tests pass: `bun run test`
+   - [ ] Type checking passes: `bun run type-check`
+   - [ ] Linting passes: `bun run lint`
+   - [ ] Formatting is consistent: `bun run format`
+   - [ ] Documentation updated for new features
+   - [ ] Commit messages follow convention
+
+2. **PR Description Template**:
+   ```markdown
+   ## Summary
+   Brief description of changes made
+
+   ## Type of Change
+   - [ ] Bug fix (non-breaking change which fixes an issue)
+   - [ ] New feature (non-breaking change which adds functionality)
+   - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+   - [ ] Documentation update
+   - [ ] Performance improvement
+   - [ ] Code refactoring
+
+   ## Testing
+   - [ ] Tests pass locally
+   - [ ] New tests added for new functionality
+   - [ ] Existing tests updated if needed
+   - [ ] Manual testing completed
+
+   ## Screenshots/Videos
+   <!-- If applicable, add screenshots or videos to demonstrate changes -->
+
+   ## Checklist
+   - [ ] Code follows project style guidelines
+   - [ ] Self-review completed
+   - [ ] Code is commented where necessary
+   - [ ] Documentation updated
+   - [ ] No breaking changes (or documented if any)
+   ```
+
+3. **Review Process**:
+   - **Automated Checks**: All CI checks must pass
+   - **Code Review**: At least one maintainer approval required
+   - **Testing**: Feature must be tested in preview environment
+   - **Documentation**: Updates must be reviewed for clarity
+   - **Security**: Security implications must be assessed
+
+### 🎯 Issue Reporting
+
+#### Bug Reports
+Found a bug? Please use our [Bug Report Template](https://github.com/RafiulM/react-starter/issues/new?template=bug_report.yml) which includes:
+- Environment details (OS, Node version, browser)
+- Step-by-step reproduction instructions
+- Expected vs actual behavior
+- Screenshots/videos if applicable
+- Error logs and console output
+
+#### Feature Requests
+Have an idea? Use our [Feature Request Template](https://github.com/RafiulM/react-starter/issues/new?template=feature_request.yml) with:
+- Problem statement and use case
+- Proposed solution and alternatives
+- Impact assessment and affected areas
+- Implementation details if available
+
+### 📚 Resources for Contributors
+
+- **[Contributing Guide](CONTRIBUTING.md)**: Comprehensive development setup and guidelines
+- **[Code of Conduct](CODE_OF_CONDUCT.md)**: Community guidelines and expectations
+- **[Architecture Guide](documentation/architecture.md)**: Technical architecture overview
+- **[API Documentation](documentation/api.md)**: API endpoints and usage
+- **[Component Library](packages/ui/README.md)**: Shared UI component documentation
+- **[Discord Community](https://discord.gg/react-starter)**: Real-time discussion and support
+
+### 🏆 Recognition
+
+Contributors are recognized through:
+- **GitHub Contributors**: Automatic recognition in repository contributors
+- **README Contributors**: Special mention in our contributors section
+- **CHANGELOG.md**: Attribution for significant contributions
+- **Release Notes**: Highlighted in GitHub releases
+- **Discord Role**: Special contributor role in our community
+
+### 📞 Getting Help
+
+- **GitHub Issues**: [Bug reports and feature requests](https://github.com/RafiulM/react-starter/issues)
+- **GitHub Discussions**: [General questions and ideas](https://github.com/RafiulM/react-starter/discussions)
+- **Discord**: [Join our community](https://discord.gg/react-starter)
+- **Documentation**: Check the `/documentation` folder
+- **AI Assistant**: Use `bun run ai:help "your question"`
+
+### 🎯 First-Time Contributors
+
+Not sure where to start? Check out our [Good First Issues](https://github.com/RafiulM/react-starter/labels/good%20first%20issue) or [Help Wanted](https://github.com/RafiulM/react-starter/labels/help%20wanted) labels. We also welcome:
+- **Documentation improvements**
+- **Test coverage additions**
+- **UI/UX enhancements**
+- **Performance optimizations**
+- **Accessibility improvements**
+
+**Ready to contribute?** Start by reading our [Contributing Guide](CONTRIBUTING.md) and joining our community!
 
 ## 📄 License
 

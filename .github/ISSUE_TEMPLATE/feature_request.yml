@@ -1,0 +1,120 @@
+name: Feature Request
+description: Suggest an idea for this project
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature! Please fill out this form to help us understand your idea.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have done the following
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have read the [Contributing Guidelines](https://github.com/RafiulM/react-starter/blob/main/CONTRIBUTING.md)
+          required: true
+        - label: This is not a question or support request (use [Discussions](https://github.com/RafiulM/react-starter/discussions) for those)
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: |
+        A clear and concise description of what the problem is.
+        Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see
+      placeholder: |
+        A clear and concise description of what you want to happen.
+        Include any relevant technical details or implementation ideas.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or features you've considered
+      placeholder: |
+        A clear and concise description of any alternative solutions or features you've considered.
+        Explain why you prefer your proposed solution.
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact Level
+      description: How would this feature impact the project?
+      options:
+        - "High - Core functionality improvement"
+        - "Medium - Nice to have improvement"
+        - "Low - Minor enhancement"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Affected Areas
+      description: Which parts of the project would this feature affect?
+      options:
+        - label: Web Application (React)
+        - label: API/Backend
+        - label: UI Components
+        - label: Infrastructure/Deployment
+        - label: Documentation
+        - label: Developer Experience
+        - label: Performance
+        - label: Security
+        - label: Accessibility
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Details
+      description: If you have ideas about implementation, please share them
+      placeholder: |
+        - Technical approach
+        - Files that would need changes
+        - Dependencies required
+        - Breaking changes (if any)
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples/Mockups
+      description: Provide examples, mockups, or references to similar features
+      placeholder: |
+        - Screenshots or mockups
+        - Links to similar implementations
+        - Code examples
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the feature request
+      placeholder: Any additional information, use cases, or considerations...
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Contribution
+      description: Are you willing to contribute this feature?
+      options:
+        - label: I would like to implement this feature myself
+        - label: I can help with testing this feature
+        - label: I can help with documentation
+        - label: I'm just suggesting the idea

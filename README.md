@@ -98,11 +98,11 @@ This starter kit uses a thoughtfully organized monorepo structure that promotes 
 
 ### 1. Create Your Project
 
-[Generate a new repository](https://github.com/kriasoft/react-starter-kit/generate) from this template, then clone it locally:
+Create a new repository from this template, then clone it locally:
 
 ```bash
-git clone https://github.com/your-username/your-project-name.git
-cd your-project-name
+git clone https://github.com/RafiulM/react-starter.git
+cd react-starter
 ```
 
 ### 2. Install Dependencies
@@ -190,11 +190,11 @@ Your application will be live on your Cloudflare Workers domain within seconds. 
 
 ## How to Contribute
 
-Anyone and everyone is welcome to [contribute](.github/CONTRIBUTING.md). Start
-by checking out the list of [open issues](https://github.com/kriasoft/react-starter-kit/issues)
-marked [help wanted](https://github.com/kriasoft/react-starter-kit/issues?q=label:"help+wanted").
+Anyone and everyone is welcome to contribute. Start
+by checking out the list of [open issues](https://github.com/RafiulM/react-starter/issues)
+marked [help wanted](https://github.com/RafiulM/react-starter/issues?q=label:"help+wanted").
 However, if you decide to get involved, please take a moment to review the
-[guidelines](.github/CONTRIBUTING.md).
+contribution guidelines in the documentation.
 
 ## License
 

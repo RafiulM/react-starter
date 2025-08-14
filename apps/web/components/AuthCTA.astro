@@ -1,0 +1,154 @@
+---
+import { Button, Card, CardContent } from '@repo/ui';
+---
+
+<section class="py-20 px-4 sm:px-6 lg:px-8">
+  <div class="container mx-auto max-w-7xl">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold tracking-tight mb-4 sm:text-4xl lg:text-5xl">
+        Get started in minutes
+      </h2>
+      <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+        Follow our simple setup process and have a full-stack application 
+        running locally and deployed to production in under 10 minutes.
+      </p>
+    </div>
+
+    <!-- Setup Steps -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <!-- Step 1 -->
+      <Card class="relative" client:visible>
+        <div class="absolute -top-4 left-6">
+          <div class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold">
+            1
+          </div>
+        </div>
+        <CardContent class="pt-8 p-6">
+          <div class="mb-4">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white mb-4">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Clone & Install</h3>
+            <p class="text-sm text-muted-foreground mb-4">
+              Clone the repository and install dependencies with a single command.
+            </p>
+            <div class="bg-muted rounded-lg p-3 text-sm font-mono">
+              <code>git clone repo && bun install</code>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <!-- Step 2 -->
+      <Card class="relative" client:visible>
+        <div class="absolute -top-4 left-6">
+          <div class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold">
+            2
+          </div>
+        </div>
+        <CardContent class="pt-8 p-6">
+          <div class="mb-4">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-green-500 to-green-600 text-white mb-4">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Configure</h3>
+            <p class="text-sm text-muted-foreground mb-4">
+              Set up your environment variables and database with guided setup.
+            </p>
+            <div class="bg-muted rounded-lg p-3 text-sm font-mono">
+              <code>bun run setup</code>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <!-- Step 3 -->
+      <Card class="relative" client:visible>
+        <div class="absolute -top-4 left-6">
+          <div class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold">
+            3
+          </div>
+        </div>
+        <CardContent class="pt-8 p-6">
+          <div class="mb-4">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 text-white mb-4">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Deploy</h3>
+            <p class="text-sm text-muted-foreground mb-4">
+              Deploy to production with zero configuration required.
+            </p>
+            <div class="bg-muted rounded-lg p-3 text-sm font-mono">
+              <code>bun run deploy</code>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+
+    <!-- Main CTA -->
+    <div class="text-center">
+      <div class="relative inline-block">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur-xl scale-110" aria-hidden="true"></div>
+        
+        <div class="relative bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-8 md:p-12">
+          <div class="text-center text-primary-foreground">
+            <h3 class="text-2xl font-bold mb-4 md:text-3xl">
+              Ready to build your next project?
+            </h3>
+            <p class="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
+              Join thousands of developers who chose React Starter Kit to ship faster and scale effortlessly.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" variant="secondary" class="h-12 px-8 text-lg" asChild client:visible>
+                <a href="#get-started">
+                  Start Building Now
+                  <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" class="h-12 px-8 text-lg border-white/20 text-white hover:bg-white/10" asChild client:visible>
+                <a
+                  href="https://github.com/RafiulM/react-starter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="mr-2 h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </Button>
+            </div>
+
+            <!-- Additional info -->
+            <div class="mt-8 flex items-center justify-center gap-8 text-sm opacity-75">
+              <div class="flex items-center gap-2">
+                <div class="h-2 w-2 rounded-full bg-green-400"></div>
+                <span>MIT Licensed</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="h-2 w-2 rounded-full bg-blue-400"></div>
+                <span>Free Forever</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="h-2 w-2 rounded-full bg-yellow-400"></div>
+                <span>No Vendor Lock-in</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

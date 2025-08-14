@@ -1,0 +1,175 @@
+---
+import { Button, Card, CardContent } from '@repo/ui';
+---
+
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-muted/30 via-background to-muted/30">
+  <div class="container mx-auto max-w-7xl">
+    <div class="text-center mb-16">
+      <div class="mb-4 inline-flex items-center rounded-full border px-4 py-2 text-sm text-primary bg-primary/5">
+        <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        AI-Powered Development
+      </div>
+      <h2 class="text-3xl font-bold tracking-tight mb-4 sm:text-4xl lg:text-5xl">
+        Built for the <span class="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">AI Era</span>
+      </h2>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+        Integrate cutting-edge AI capabilities into your applications with 
+        pre-built components, APIs, and deployment patterns optimized for AI workloads.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Left side - Features -->
+      <div class="space-y-8">
+        <div class="flex gap-4">
+          <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Smart Code Generation</h3>
+            <p class="text-muted-foreground">
+              Built-in integration with Claude, GPT-4, and other AI models for intelligent code completion, 
+              refactoring, and automated testing.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-green-500 to-green-600 text-white">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Conversational Interfaces</h3>
+            <p class="text-muted-foreground">
+              Pre-built chat components with streaming responses, conversation memory, 
+              and integration with popular AI providers.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 text-white">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Multi-Modal Processing</h3>
+            <p class="text-muted-foreground">
+              Handle text, images, audio, and video processing with edge-optimized AI models 
+              for real-time user experiences.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-orange-500 to-red-500 text-white">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Edge AI Deployment</h3>
+            <p class="text-muted-foreground">
+              Deploy AI workloads to Cloudflare Workers AI, Vercel Functions, 
+              and other edge platforms for ultra-low latency.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side - Demo/Visual -->
+      <div class="relative">
+        <Card class="border-2 bg-gradient-to-br from-muted/50 to-background" client:visible>
+          <CardContent class="p-8">
+            <div class="space-y-4">
+              <!-- Mock chat interface -->
+              <div class="text-center mb-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                  <div class="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
+                  AI Assistant Active
+                </div>
+              </div>
+
+              <div class="space-y-4 max-h-80 overflow-y-auto">
+                <!-- User message -->
+                <div class="flex justify-end">
+                  <div class="bg-primary text-primary-foreground rounded-2xl rounded-br-md px-4 py-2 max-w-xs">
+                    <p class="text-sm">Create a user authentication flow with email verification</p>
+                  </div>
+                </div>
+
+                <!-- AI response -->
+                <div class="flex justify-start">
+                  <div class="bg-muted rounded-2xl rounded-bl-md px-4 py-2 max-w-xs">
+                    <p class="text-sm">
+                      I'll create a complete auth flow with email verification. Here's what I'll generate:
+                    </p>
+                    <div class="mt-2 text-xs text-muted-foreground">
+                      ✓ Email verification component<br/>
+                      ✓ Database schema updates<br/>
+                      ✓ tRPC API routes<br/>
+                      ✓ TypeScript types
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Code preview -->
+                <div class="bg-slate-900 rounded-lg p-4 text-slate-100 text-xs font-mono">
+                  <div class="text-green-400">// Generated auth schema</div>
+                  <div class="text-blue-300">export</div> <div class="text-yellow-300">const</div> emailVerification = <br/>
+                  <div class="ml-4 text-purple-300">table</div>(<div class="text-green-300">'email_verification'</div>, {<br/>
+                  <div class="ml-8">id: <div class="text-blue-300">serial</div>(<div class="text-green-300">'id'</div>).<div class="text-yellow-300">primaryKey</div>(),</div><br/>
+                  <div class="ml-8">userId: <div class="text-blue-300">uuid</div>(<div class="text-green-300">'user_id'</div>),</div><br/>
+                  <div class="ml-8">token: <div class="text-blue-300">text</div>(<div class="text-green-300">'token'</div>),</div><br/>
+                  <div class="ml-4">});</div>
+                </div>
+
+                <!-- Status -->
+                <div class="text-center">
+                  <div class="inline-flex items-center gap-2 text-sm text-muted-foreground">
+                    <div class="h-1.5 w-1.5 rounded-full bg-green-500"></div>
+                    <span>Generated 4 files in 2.3s</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <!-- Floating elements -->
+        <div class="absolute -top-4 -right-4 h-8 w-8 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 animate-pulse"></div>
+        <div class="absolute -bottom-4 -left-4 h-6 w-6 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 animate-pulse delay-1000"></div>
+      </div>
+    </div>
+
+    <!-- AI Providers -->
+    <div class="mt-16 text-center">
+      <p class="text-sm text-muted-foreground mb-8">Integrated with leading AI providers</p>
+      <div class="flex items-center justify-center gap-8 opacity-60">
+        <div class="text-lg font-semibold">OpenAI</div>
+        <div class="text-lg font-semibold">Anthropic</div>
+        <div class="text-lg font-semibold">Cloudflare AI</div>
+        <div class="text-lg font-semibold">Hugging Face</div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-16 text-center">
+      <Button size="lg" class="h-12 px-8" asChild client:visible>
+        <a href="#ai-examples">
+          Explore AI Examples
+          <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </Button>
+    </div>
+  </div>
+</section>

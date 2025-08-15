@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Draft Short Project Description",
+    "description": "Write a concise, clear summary of the react-starter project to be included at the top of the README file.",
+    "details": "Summarize the purpose and key features of the react-starter boilerplate in 2-4 sentences. Focus on its monorepo structure, built-in authentication, AI integration, and rapid developer onboarding. Ensure the description is accessible to new developers and highlights the main value proposition.",
+    "status": "pending",
+    "test_strategy": "Review the drafted description for clarity, accuracy, and alignment with the PRD. Ensure it is concise (2-4 sentences) and covers the core aspects mentioned in the PRD.",
+    "priority": "high",
+    "ordinal": 0,
+    "task_group_id": "29c0fe42-c380-4e1a-a614-b598497eaf25",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "1ce30f0c-b5ae-4d62-8b10-6a58aa5b96db",
+    "created_at": "2025-08-15T13:42:39.731463Z",
+    "user_id": "user_2yhjHRb6iVLPYcoehYzi2z6gXuY",
+    "subtasks": []
+  },
+  {
+    "title": "Insert Description into README",
+    "description": "Add the drafted short description to the top of the project's README.md file.",
+    "details": "Open the README.md file at the project root. Place the short description as the first content, before any setup or usage instructions. Ensure proper Markdown formatting and that the description stands out as the project introduction.",
+    "status": "pending",
+    "test_strategy": "Verify that the README.md displays the new description at the top. Check Markdown rendering in a viewer (e.g., GitHub) for formatting issues. Confirm no existing content is lost or overwritten.",
+    "priority": "medium",
+    "ordinal": 1,
+    "task_group_id": "29c0fe42-c380-4e1a-a614-b598497eaf25",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "a12e073e-5e0f-4c63-b41a-1055bb42029e",
+    "created_at": "2025-08-15T13:42:39.731479Z",
+    "user_id": "user_2yhjHRb6iVLPYcoehYzi2z6gXuY",
+    "subtasks": []
+  },
+  {
+    "title": "Peer Review and Polish README",
+    "description": "Have a team member or reviewer check the updated README for clarity, grammar, and completeness.",
+    "details": "Request a peer review of the README changes. Address any feedback regarding clarity, grammar, or formatting. Make minor edits as needed to ensure the description is professional and error-free.",
+    "status": "pending",
+    "test_strategy": "Obtain reviewer approval or sign-off. Confirm that any suggested edits are incorporated and the README meets documentation standards.",
+    "priority": "medium",
+    "ordinal": 2,
+    "task_group_id": "29c0fe42-c380-4e1a-a614-b598497eaf25",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "4794ed5c-a229-4192-81b2-00752b2caaf6",
+    "created_at": "2025-08-15T13:42:39.731482Z",
+    "user_id": "user_2yhjHRb6iVLPYcoehYzi2z6gXuY",
+    "subtasks": []
+  }
+]

@@ -29,7 +29,7 @@ Be sure to join our [Discord channel](https://discord.gg/2nKEnKq) for assistance
 
 This starter kit uses a thoughtfully organized monorepo structure that promotes code reuse and maintainability:
 
-- [`apps/app/`](./apps/app) — React 19 application with TanStack Router, Jotai, and Tailwind CSS v4
+- [`apps/app/`](./apps/app) — React 19 application with TanStack Router, Jotai, and Tailwind CSS v4; the app route serves as the main entry point handling core application logic and client-side routing
 - [`apps/web/`](./apps/web) — Astro marketing website for static site generation
 - [`apps/api/`](./apps/api) — tRPC API server powered by Hono framework
 - [`apps/edge/`](./apps/edge) — Cloudflare Workers entry point for edge deployment

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Add App Route Explanation to README",
+    "description": "Add a single line to the README file explaining the purpose and usage of the app route in the project.",
+    "details": "Open the root README.md file. Identify the appropriate section (such as 'Project Structure', 'API Endpoints', or an introductory section) and add a concise line explaining what the app route is (e.g., 'The app route handles core application logic and serves as the main entry point for API requests.'). Ensure the explanation is clear for new developers onboarding to the project.",
+    "status": "pending",
+    "test_strategy": "Review the updated README to confirm the new line is present, clear, and accurately describes the app route. Optionally, have another developer review for clarity.",
+    "priority": "medium",
+    "ordinal": 0,
+    "task_group_id": "641164df-3f38-446a-a4ce-3f4078d082e1",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "a56acca0-7309-4f5d-a574-ca9a37e50dcf",
+    "created_at": "2025-08-15T14:12:46.434916Z",
+    "user_id": "user_2yhjHRb6iVLPYcoehYzi2z6gXuY",
+    "subtasks": []
+  }
+]

@@ -27,6 +27,9 @@ api/
 │   ├── app.ts              # Application-level routes
 │   ├── user.ts             # User management endpoints
 │   └── organization.ts     # Multi-tenant organization routes
+├── migrations/             # Database migration templates (placeholder)
+│   ├── 001-initial-schema.sql    # SQL migration template
+│   └── 001-initial-schema.js     # JavaScript migration template
 ├── router.ts               # Main router that combines all sub-routers
 ├── index.ts                # Package exports and type definitions
 └── package.json            # Scripts and dependencies

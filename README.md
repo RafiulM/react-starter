@@ -146,6 +146,108 @@ bun --filter @repo/db migrate
 bun --filter @repo/db seed  # Optional: add sample data
 ```
 
+## Database Migrations
+
+This project includes a placeholder migration setup in `apps/api/migrations/` to establish a foundation for future database schema changes. This is currently a demonstration structure that will be replaced when a real database is configured.
+
+### Current Migration Structure
+
+- **Location**: `apps/api/migrations/`
+- **Placeholder Scripts**: 
+  - `001-initial-schema.sql` - SQL migration template
+  - `001-initial-schema.js` - JavaScript migration template
+- **Status**: These are demonstration files showing migration structure and conventions
+
+### Migration Workflow (When Database is Integrated)
+
+Once you integrate a database system, use one of these recommended approaches:
+
+#### Option 1: Drizzle ORM (Recommended)
+```bash
+# Generate new migration
+bun --filter @repo/db generate:local
+
+# Apply migrations
+bun --filter @repo/db migrate
+
+# Check migration status
+bun --filter @repo/db check
+```
+
+#### Option 2: Prisma Migrate
+```bash
+# Create new migration
+bunx prisma migrate dev --name add-user-posts
+
+# Apply migrations in production
+bunx prisma migrate deploy
+
+# Generate migration SQL for manual review
+bunx prisma migrate diff --from-schema-datamodel prisma/schema.prisma --to-schema-datasource prisma/schema.prisma --script > migration.sql
+```
+
+#### Option 3: TypeORM Migrations
+```bash
+# Generate new migration
+bunx typeorm migration:generate src/migrations/AddUserPosts -d src/data-source.ts
+
+# Run migrations
+bunx typeorm migration:run -d src/data-source.ts
+
+# Revert last migration
+bunx typeorm migration:revert -d src/data-source.ts
+```
+
+#### Option 4: Raw SQL with Migration Runner
+```bash
+# Create new migration file
+mkdir -p apps/api/migrations
+touch apps/api/migrations/$(date +%Y%m%d%H%M%S)-add-user-posts.sql
+
+# Run migrations using your preferred tool
+bun run migrate:up
+bun run migrate:down
+```
+
+### Migration Naming Convention
+
+Use consistent naming for migration files:
+- **Format**: `001-descriptive-name.sql` or `YYYYMMDDHHMMSS-descriptive-name.sql`
+- **Examples**: 
+  - `001-create-users-table.sql`
+  - `002-add-user-indexes.sql`
+  - `20240115120000-add-posts-table.sql`
+
+### Best Practices
+
+1. **Idempotent Migrations**: Write migrations that can be safely run multiple times
+2. **Small Changes**: Keep migrations focused on single logical changes
+3. **Test Migrations**: Always test in development before production
+4. **Backup First**: Create database backups before running migrations in production
+5. **Rollback Plan**: Ensure each migration has a corresponding rollback/down script
+
+### Migration Storage
+
+- **Development**: `apps/api/migrations/`
+- **Production**: Use your database provider's migration system
+- **Backup**: Store migration files in version control (git)
+
+### Migration Commands
+
+```bash
+# Check current migration status
+bun --filter @repo/db migrate:status
+
+# Run all pending migrations
+bun --filter @repo/db migrate:up
+
+# Rollback last migration
+bun --filter @repo/db migrate:down
+
+# Reset database (caution: drops all data)
+bun --filter @repo/db migrate:reset
+```
+
 Open <http://localhost:5173> to see your React app running. The marketing website runs on <http://localhost:4321>. The backend API will be available at the port shown by `wrangler dev` (typically 8787).
 
 ## Production Deployment

@@ -1,5 +1,7 @@
 # React Starter Kit
 
+A production-ready React monorepo starter that combines React 19, TypeScript, tRPC, and Cloudflare Workers to build fast, scalable full-stack applications with edge-native deployment and end-to-end type safety.
+
 <a href="https://github.com/kriasoft/react-starter-kit?sponsor=1"><img src="https://img.shields.io/badge/-GitHub-%23555.svg?logo=github-sponsors" height="20"></a>
 <a href="https://discord.gg/2nKEnKq"><img src="https://img.shields.io/discord/643523529131950086?label=Chat" height="20"></a>
 <a href="https://github.com/kriasoft/react-starter-kit/stargazers"><img src="https://img.shields.io/github/stars/kriasoft/react-starter-kit.svg?style=social&label=Star&maxAge=3600" height="20"></a>

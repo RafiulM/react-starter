@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Update README with Docs Page Link",
+    "description": "Edit the main README.md file to add a prominent link to the docs page, including a short description of what users will find there.",
+    "details": "Insert a clearly visible section or badge near the top of README.md (e.g., after the project description or in a 'Documentation' section). Add a markdown link to the docs page (e.g., [Project Documentation](/docs) or [docs/blog-feature-guide.md]), with a concise description (e.g., 'See full usage guides and API reference in our documentation page.'). Ensure the link format matches the project's conventions and works in both GitHub and deployed preview.",
+    "status": "pending",
+    "test_strategy": "Preview the README in GitHub and locally to ensure the link is visible, correctly formatted, and functional. Confirm that the description is clear and concise.",
+    "priority": "high",
+    "ordinal": 1,
+    "task_group_id": "7ec4ed7a-11f5-43d3-9e88-5ceb2e7b1565",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "9979dd5d-51ce-4478-9aa6-dde5a498aa8b",
+    "created_at": "2025-08-16T16:42:35.531617Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  },
+  {
+    "title": "Review and Test Documentation Link",
+    "description": "Verify that the new docs page link in the README works as intended and provides a smooth path for users to access documentation.",
+    "details": "Click the link in the rendered README on GitHub and in any local markdown preview. Ensure it navigates to the correct docs page and that the content is up to date. If the docs page is a route in the frontend, ensure the deployed app's /docs route is accessible. If it's a markdown file, ensure the file exists and is readable.",
+    "status": "pending",
+    "test_strategy": "Test the link in all relevant environments (GitHub, local preview, deployed app if applicable). Confirm that users can access the documentation without confusion or dead links.",
+    "priority": "medium",
+    "ordinal": 2,
+    "task_group_id": "7ec4ed7a-11f5-43d3-9e88-5ceb2e7b1565",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "b76b1ee4-173e-4b57-9ef4-a56649ee9b45",
+    "created_at": "2025-08-16T16:42:35.531621Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  },
+  {
+    "title": "Identify Docs Page Location and Content",
+    "description": "Determine the correct location and format for the docs page reference in the README, ensuring it aligns with the project's documentation structure and links to the main docs page (e.g., /docs route or docs/ directory).",
+    "details": "Review the existing documentation structure (e.g., VitePress, docs/ directory, or frontend /docs route). Confirm the canonical entry point for documentation (such as /docs in the deployed app or docs/index.md). Decide on the most user-friendly and accurate link to include in the README. Gather a brief description of what the docs page covers for context.",
+    "status": "pending",
+    "test_strategy": "Check the project for the existence of the docs page (route or markdown). Verify that the identified link is valid and accessible in both local and deployed environments.",
+    "priority": "high",
+    "ordinal": 0,
+    "task_group_id": "7ec4ed7a-11f5-43d3-9e88-5ceb2e7b1565",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "2e14134f-0630-4250-996a-474b9e004bfa",
+    "created_at": "2025-08-16T16:42:35.531599Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  }
+]

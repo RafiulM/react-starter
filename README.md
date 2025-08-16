@@ -9,6 +9,12 @@ Building modern web applications shouldn't require weeks of configuration hell. 
 
 Designed for developers who value both speed and quality, this template provides a complete foundation for full-stack applications. From solo projects to team collaborations, it scales with your ambitions while maintaining the developer experience you deserve.
 
+## 📚 Documentation
+
+- **[📖 Project Documentation](/docs)** - Complete guides for getting started, project structure, API references, and deployment
+- **[📝 Blog Feature Guide](./docs/blog-feature-guide.md)** - Detailed walkthrough of the built-in blog system with admin dashboard
+- **[🔧 API Reference](./docs/blog-api-reference.md)** - Complete API documentation with examples
+
 ## What You Get
 
 - **Performance by Default**: Bun runtime delivers exceptional speed across development and production. Your build times will thank you.

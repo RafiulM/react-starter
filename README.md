@@ -5,6 +5,8 @@
 <a href="https://github.com/kriasoft/react-starter-kit/stargazers"><img src="https://img.shields.io/github/stars/kriasoft/react-starter-kit.svg?style=social&label=Star&maxAge=3600" height="20"></a>
 <a href="https://x.com/ReactStarter"><img src="https://img.shields.io/twitter/follow/ReactStarter.svg?style=social&label=Follow&maxAge=3600" height="20"></a>
 
+An opinionated, full-stack React boilerplate with TypeScript API, authentication, AI utilities, and development best practices built-in.
+
 Building modern web applications shouldn't require weeks of configuration hell. This React Starter Kit eliminates the tedious setup work so you can focus on what matters: shipping great products.
 
 Designed for developers who value both speed and quality, this template provides a complete foundation for full-stack applications. From solo projects to team collaborations, it scales with your ambitions while maintaining the developer experience you deserve.

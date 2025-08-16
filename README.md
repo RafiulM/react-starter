@@ -9,6 +9,12 @@ Building modern web applications shouldn't require weeks of configuration hell. 
 
 Designed for developers who value both speed and quality, this template provides a complete foundation for full-stack applications. From solo projects to team collaborations, it scales with your ambitions while maintaining the developer experience you deserve.
 
+## 📚 Documentation
+
+- **[📖 Project Documentation](/docs)** - Complete guides for getting started, project structure, API references, and deployment
+- **[📝 Blog Feature Guide](./docs/blog-feature-guide.md)** - Detailed walkthrough of the built-in blog system with admin dashboard
+- **[🔧 API Reference](./docs/blog-api-reference.md)** - Complete API documentation with examples
+
 ## What You Get
 
 - **Performance by Default**: Bun runtime delivers exceptional speed across development and production. Your build times will thank you.
@@ -33,6 +39,7 @@ This starter kit uses a thoughtfully organized monorepo structure that promotes 
 - [`apps/web/`](./apps/web) — Astro marketing website for static site generation
 - [`apps/api/`](./apps/api) — tRPC API server powered by Hono framework
 - [`apps/edge/`](./apps/edge) — Cloudflare Workers entry point for edge deployment
+- **Blog Feature** — Complete CRUD blog system with admin dashboard and TanStack Query integration ([guide](./docs/blog-feature-guide.md))
 - [`packages/core/`](./packages/core) — Shared TypeScript types and utilities
 - [`packages/ui/`](./packages/ui) — Shared UI components with shadcn/ui management utilities
 - [`packages/ws-protocol/`](./packages/ws-protocol) — WebSocket protocol template with type-safe messaging

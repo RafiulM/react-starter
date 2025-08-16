@@ -12,6 +12,7 @@ import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 import { Hono } from "hono";
 import type { AppContext } from "./lib/context.js";
 import { router } from "./lib/trpc.js";
+import { blogRouter } from "./routers/blog.js";
 import { organizationRouter } from "./routers/organization.js";
 import { userRouter } from "./routers/user.js";
 
@@ -19,6 +20,7 @@ import { userRouter } from "./routers/user.js";
 const appRouter = router({
   user: userRouter,
   organization: organizationRouter,
+  blog: blogRouter,
 });
 
 // HTTP router

@@ -14,11 +14,20 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
+import { useRouterState } from "@tanstack/react-router";
+
 export function Layout({ children }: { children: React.ReactNode }) {
+  const router = useRouterState();
+  const isLandingPage = router.location.pathname === "/";
+
+  if (isLandingPage) {
+    return <>{children}</>;
+  }
+
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const sidebarItems = [
-    { icon: Home, label: "Dashboard", to: "/" },
+    { icon: Home, label: "Dashboard", to: "/dashboard" },
     { icon: Activity, label: "Analytics", to: "/analytics" },
     { icon: Users, label: "Users", to: "/users" },
     { icon: FileText, label: "Reports", to: "/reports" },

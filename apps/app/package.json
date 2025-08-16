@@ -1,6 +1,7 @@
 {
   "name": "@repo/app",
   "version": "0.0.0",
+  "author": "Konstantin Tarkus <hello@tarkus.me> (https://tarkus.me)",
   "private": true,
   "type": "module",
   "scripts": {

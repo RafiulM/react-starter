@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandIcon Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .w-6 { width: 1.5rem; }
+        .h-6 { height: 1.5rem; }
+        .w-8 { width: 2rem; }
+        .h-8 { height: 2rem; }
+        .w-10 { width: 2.5rem; }
+        .h-10 { height: 2.5rem; }
+        .transition-transform { transition: transform 0.2s ease; }
+        .hover\:scale-105:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="p-8 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-8">BrandIcon Component Demo</h1>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">Brand Icon Sizes</h2>
+            <div class="flex items-center gap-4">
+                <div class="text-center">
+                    <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Small brand icon">
+                        <title>Small brand icon</title>
+                        <defs>
+                            <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stopColor="#3b82f6" />
+                                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.8" />
+                            </linearGradient>
+                            <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stopColor="#10b981" />
+                                <stop offset="100%" stopColor="#10b981" stopOpacity="0.7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="16" cy="16" r="14" fill="url(#brandGradient)" />
+                        <g transform="translate(16, 16)">
+                            <path d="M -6,-8 A 10,10 0 0,1 6,-8" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+                            <path d="M 6,-8 L 6,8" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+                            <path d="M 6,8 A 10,10 0 0,1 -6,8" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+                            <circle cx="-8" cy="0" r="2" fill="url(#accentGradient)" />
+                        </g>
+                        <circle cx="16" cy="16" r="12" fill="none" stroke="white" strokeWidth="0.5" strokeOpacity="0.1" />
+                    </svg>
+                    <p class="text-xs mt-2">Small</p>
+                </div>
+
+                <div class="text-center">
+                    <svg class="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Medium brand icon">
+                        <title>Medium brand icon</title>
+                        <defs>
+                            <linearGradient id="brandGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stopColor="#3b82f6" />
+                                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.8" />
+                            </linearGradient>
+                            <linearGradient id="accentGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stopColor="#10b981" />
+                                <stop offset="100%" stopColor="#10b981" stopOpacity="0.7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="16" cy="16" r="14" fill="url(#brandGradient2)" />
+                        <g transform="translate(16, 16)">
+                            <path d="M -6,-8 A 10,10 0 0,1 6,-8" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+                            <path d="M 6,-8 L 6,8" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+                            <path d="M 6,8 A 10,10 0 0,1 -6,8" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+                            <circle cx="-8" cy="0" r="2" fill="url(#accentGradient2)" />
+                        </g>
+                        <circle cx="16" cy="16" r="12" fill="none" stroke="white" strokeWidth="0.5" strokeOpacity="0.1" />
+                    </svg>
+                    <p class="text-xs mt-2">Medium</p>
+                </div>
+
+                <div class="text-center">
+                    <svg class="w-10 h-10" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Large brand icon">
+                        <title>Large brand icon</title>
+                        <defs>
+                            <linearGradient id="brandGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stopColor="#3b82f6" />
+                                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.8" />
+                            </linearGradient>
+                            <linearGradient id="accentGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stopColor="#10b981" />
+                                <stop offset="100%" stopColor="#10b981" stopOpacity="0.7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="16" cy="16" r="14" fill="url(#brandGradient3)" />
+                        <g transform="translate(16, 16)">
+                            <path d="M -6,-8 A 10,10 0 0,1 6,-8" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+                            <path d="M 6,-8 L 6,8" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+                            <path d="M 6,8 A 10,10 0 0,1 -6,8" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+                            <circle cx="-8" cy="0" r="2" fill="url(#accentGradient3)" />
+                        </g>
+                        <circle cx="16" cy="16" r="12" fill="none" stroke="white" strokeWidth="0.5" strokeOpacity="0.1" />
+                    </svg>
+                    <p class="text-xs mt-2">Large</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">Navbar Integration Preview</h2>
+            <div class="flex items-center gap-2 p-4 bg-gray-100 rounded">
+                <svg class="w-8 h-8 transition-transform hover:scale-105" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Console - Home">
+                    <title>Console - Home</title>
+                    <defs>
+                        <linearGradient id="brandGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor="#3b82f6" />
+                            <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.8" />
+                        </linearGradient>
+                        <linearGradient id="accentGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor="#10b981" />
+                            <stop offset="100%" stopColor="#10b981" stopOpacity="0.7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="16" cy="16" r="14" fill="url(#brandGradient4)" />
+                    <g transform="translate(16, 16)">
+                        <path d="M -6,-8 A 10,10 0 0,1 6,-8" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+                        <path d="M 6,-8 L 6,8" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+                        <path d="M 6,8 A 10,10 0 0,1 -6,8" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+                        <circle cx="-8" cy="0" r="2" fill="url(#accentGradient4)" />
+                    </g>
+                    <circle cx="16" cy="16" r="12" fill="none" stroke="white" strokeWidth="0.5" strokeOpacity="0.1" />
+                </svg>
+                <span class="font-semibold text-lg">Console</span>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Design Features</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Modern geometric design with a stylized "C" shape</li>
+                <li>Gradient background using CSS custom properties</li>
+                <li>Accent dot for visual interest</li>
+                <li>Multiple size options (sm, md, lg)</li>
+                <li>Responsive and scales well</li>
+                <li>Proper accessibility attributes</li>
+                <li>Hover effects with smooth transitions</li>
+                <li>Uses Tailwind CSS for styling</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

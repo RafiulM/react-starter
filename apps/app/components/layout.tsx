@@ -11,6 +11,7 @@ import {
   FileText,
   Menu,
   X,
+  Rocket,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -19,6 +20,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   const sidebarItems = [
     { icon: Home, label: "Dashboard", to: "/" },
+    { icon: Rocket, label: "Landing", to: "/landing" },
     { icon: Activity, label: "Analytics", to: "/analytics" },
     { icon: Users, label: "Users", to: "/users" },
     { icon: FileText, label: "Reports", to: "/reports" },

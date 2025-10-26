@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { useAuth } from "@/lib/useAuth";
+import { BrandIcon } from "@/components/BrandIcon";
 
 // Navigation links configuration
 const navigationLinks = [
@@ -54,9 +55,11 @@ export function Navbar() {
           {/* Logo/Brand */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2" onClick={handleLinkClick}>
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">C</span>
-              </div>
+              <BrandIcon
+                size="md"
+                ariaLabel="Console - Home"
+                className="transition-transform hover:scale-105"
+              />
               <span className="font-semibold text-lg">Console</span>
             </Link>
           </div>

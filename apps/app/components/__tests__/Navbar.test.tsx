@@ -318,6 +318,11 @@ describe("Navbar", () => {
     // Check for brand/logo
     expect(screen.getByText("Console")).toBeInTheDocument();
 
+    // Check for BrandIcon component
+    const brandIcon = screen.getByRole("img", { name: /console/i });
+    expect(brandIcon).toBeInTheDocument();
+    expect(brandIcon).toHaveAttribute("aria-label", "Console - Home");
+
     // Check that desktop navigation is present
     const desktopNav = screen.getByText("Dashboard").closest("div");
     expect(desktopNav).toHaveClass("hidden", "md:flex");
@@ -325,5 +330,51 @@ describe("Navbar", () => {
     // Check for mobile menu button
     const mobileMenuButton = screen.getByLabelText("Toggle mobile menu");
     expect(mobileMenuButton).toHaveClass("flex", "items-center", "md:hidden");
+  });
+
+  it("includes brand icon with proper accessibility attributes", () => {
+    mockUseAuth.mockReturnValue({
+      user: null,
+      isAuthenticated: false,
+      isLoading: false,
+      logout: vi.fn(),
+      login: vi.fn(),
+      signup: vi.fn(),
+    });
+
+    render(
+      <TestWrapper>
+        <Navbar />
+      </TestWrapper>
+    );
+
+    // Check that BrandIcon is present with proper attributes
+    const brandIcon = screen.getByRole("img", { name: /console/i });
+    expect(brandIcon).toBeInTheDocument();
+    expect(brandIcon).toHaveAttribute("aria-label", "Console - Home");
+    expect(brandIcon).toHaveClass("transition-transform", "hover:scale-105");
+  });
+
+  it("brand icon links to home page", () => {
+    mockUseAuth.mockReturnValue({
+      user: null,
+      isAuthenticated: false,
+      isLoading: false,
+      logout: vi.fn(),
+      login: vi.fn(),
+      signup: vi.fn(),
+    });
+
+    render(
+      <TestWrapper>
+        <Navbar />
+      </TestWrapper>
+    );
+
+    // Check that brand icon is wrapped in a link to home
+    const brandIcon = screen.getByRole("img", { name: /console/i });
+    const homeLink = brandIcon.closest("a");
+    expect(homeLink).toBeInTheDocument();
+    expect(homeLink).toHaveAttribute("href", "/");
   });
 });

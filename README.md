@@ -25,6 +25,8 @@ Designed for developers who value both speed and quality, this template provides
 This project was bootstrapped with [React Starter Kit](https://github.com/kriasoft/react-starter-kit).
 Be sure to join our [Discord channel](https://discord.gg/2nKEnKq) for assistance.
 
+Looking to contribute? See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
 ## Monorepo Architecture
 
 This starter kit uses a thoughtfully organized monorepo structure that promotes code reuse and maintainability:
@@ -190,11 +192,7 @@ Your application will be live on your Cloudflare Workers domain within seconds. 
 
 ## How to Contribute
 
-Anyone and everyone is welcome to [contribute](.github/CONTRIBUTING.md). Start
-by checking out the list of [open issues](https://github.com/kriasoft/react-starter-kit/issues)
-marked [help wanted](https://github.com/kriasoft/react-starter-kit/issues?q=label:"help+wanted").
-However, if you decide to get involved, please take a moment to review the
-[guidelines](.github/CONTRIBUTING.md).
+Anyone and everyone is welcome to contribute. Start by checking out the list of open issues. However, if you decide to get involved, please take a moment to review the local [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## License
 

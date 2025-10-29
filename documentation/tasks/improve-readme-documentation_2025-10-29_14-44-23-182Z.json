@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Validate Documentation Accuracy and Usability",
+    "description": "Test all documented commands and workflows in the new root README to ensure they work as described and are clear to new contributors.",
+    "details": "- Set up a fresh clone of the repository and follow the README step-by-step.\n- Run all setup, development, testing, and deployment commands as documented.\n- Note any discrepancies or unclear steps and update the README as needed.\n- Optionally, have a new developer or team member perform the same validation for unbiased feedback.",
+    "status": "pending",
+    "test_strategy": "- Confirm that a clean setup using only the README results in a working local environment and successful deployment steps.\n- Gather feedback from at least one new user and incorporate improvements.",
+    "priority": "high",
+    "ordinal": 2,
+    "task_group_id": "0df23be3-ec6b-4f2e-97da-138f9ba5d909",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "edffcd96-135c-418b-b0e4-3bd9accdf628",
+    "created_at": "2025-10-29T14:44:07.006263Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  },
+  {
+    "title": "Review and Refactor Subdirectory READMEs",
+    "description": "Audit, trim, or remove the existing READMEs in `apps/api` and `apps/app` to avoid redundancy and ensure they defer to the root README.md.",
+    "details": "- Open `apps/api/README.md` and `apps/app/README.md`.\n- Remove redundant content now covered in the root README.\n- Replace with a brief note pointing to the root README for setup, development, and deployment instructions.\n- Retain only component- or directory-specific notes if necessary.",
+    "status": "pending",
+    "test_strategy": "- Verify that subdirectory READMEs contain no outdated or redundant instructions.\n- Confirm that all essential information is present in the root README and referenced appropriately.",
+    "priority": "medium",
+    "ordinal": 1,
+    "task_group_id": "0df23be3-ec6b-4f2e-97da-138f9ba5d909",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "acc4d259-c408-4a6c-b663-d9722d45cccc",
+    "created_at": "2025-10-29T14:44:07.006259Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  },
+  {
+    "title": "Draft Comprehensive Root README.md",
+    "description": "Create a detailed and well-structured README.md at the project root, consolidating and enhancing information from subdirectory READMEs and project files.",
+    "details": "- Structure the README with sections: Project Overview, Features, Tech Stack, Prerequisites, Getting Started, Project Structure, Available Scripts, Testing, Deployment, and Contribution Guidelines.\n- Include badges (build status, license, etc.) at the top.\n- Add a high-level architecture diagram (can be ASCII or link to an image).\n- Ensure all commands, environment variables, and setup steps are accurate by referencing code, scripts, and configuration files.\n- Link to official documentation for key technologies (tRPC, Terraform, Cloudflare D1).\n- Use clear formatting and code blocks for commands and configuration examples.",
+    "status": "pending",
+    "test_strategy": "- Manually follow all setup, test, and deployment instructions in a clean environment to ensure accuracy.\n- Review the README for completeness, clarity, and professional formatting.\n- Solicit feedback from a new developer to validate usability.",
+    "priority": "high",
+    "ordinal": 0,
+    "task_group_id": "0df23be3-ec6b-4f2e-97da-138f9ba5d909",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "39f7d737-438c-4e93-8ae8-9c86f4a9911f",
+    "created_at": "2025-10-29T14:44:07.006230Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  }
+]

@@ -13,6 +13,7 @@
     "@astrojs/react": "^4.3.0",
     "@repo/ui": "*",
     "astro": "^5.12.9",
+    "framer-motion": "^12.23.24",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

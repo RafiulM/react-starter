@@ -8,6 +8,9 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
+  H1,
+  H2,
+  H3,
   Separator,
 } from "@repo/ui";
 import { createFileRoute } from "@tanstack/react-router";
@@ -21,9 +24,9 @@ function About() {
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
       {/* Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold tracking-tight mb-6">
+        <H1 className="mb-6" align="center">
           About React Starter Kit
-        </h1>
+        </H1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           A production-ready, full-stack web application template that combines
           modern development practices with cutting-edge technologies to deliver
@@ -58,9 +61,9 @@ function About() {
 
       {/* Key Features */}
       <section className="mb-20">
-        <h2 className="text-3xl font-bold tracking-tight mb-8 text-center">
+        <H2 className="mb-8" align="center">
           What Makes Us Different
-        </h2>
+        </H2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card>
@@ -130,15 +133,15 @@ function About() {
 
       {/* Technology Choices */}
       <section className="mb-20">
-        <h2 className="text-3xl font-bold tracking-tight mb-8 text-center">
+        <H2 className="mb-8" align="center">
           Technology Choices
-        </h2>
+        </H2>
 
         <Card>
           <CardContent className="pt-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="font-semibold mb-4">Frontend Stack</h3>
+                <H3 className="mb-4">Frontend Stack</H3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>
                     <strong>React 19:</strong> Latest React with concurrent
@@ -167,7 +170,7 @@ function About() {
               </div>
 
               <div>
-                <h3 className="font-semibold mb-4">Backend Stack</h3>
+                <H3 className="mb-4">Backend Stack</H3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>
                     <strong>Bun:</strong> Fast JavaScript runtime and package
@@ -199,9 +202,9 @@ function About() {
 
       {/* Team Section */}
       <section className="mb-20">
-        <h2 className="text-3xl font-bold tracking-tight mb-8 text-center">
+        <H2 className="mb-8" align="center">
           Built by Kriasoft
-        </h2>
+        </H2>
 
         <Card>
           <CardContent className="pt-6 text-center">
@@ -239,9 +242,9 @@ function About() {
 
       {/* CTA Section */}
       <section className="text-center">
-        <h2 className="text-3xl font-bold tracking-tight mb-4">
+        <H2 className="mb-4" align="center">
           Ready to Get Started?
-        </h2>
+        </H2>
         <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
           Join thousands of developers who have chosen React Starter Kit for
           their next project.

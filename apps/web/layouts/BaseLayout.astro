@@ -1,5 +1,6 @@
 ---
 import '@/styles/globals.css';
+import { H3, H4 } from '@repo/ui';
 
 export interface Props {
   title?: string;
@@ -96,14 +97,14 @@ const {
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="space-y-3">
-              <h3 class="font-semibold">React Starter Kit</h3>
+              <H3 client:visible>React Starter Kit</H3>
               <p class="text-sm text-muted-foreground">
                 Modern full-stack web application template optimized for
                 serverless deployment.
               </p>
             </div>
             <div class="space-y-3">
-              <h4 class="font-medium">Resources</h4>
+              <H4 client:visible>Resources</H4>
               <ul class="space-y-2 text-sm text-muted-foreground">
                 <li>
                   <a href="/docs" class="hover:text-foreground transition-colors">
@@ -123,7 +124,7 @@ const {
               </ul>
             </div>
             <div class="space-y-3">
-              <h4 class="font-medium">Community</h4>
+              <H4 client:visible>Community</H4>
               <ul class="space-y-2 text-sm text-muted-foreground">
                 <li>
                   <a href="https://github.com/kriasoft/react-starter-kit" class="hover:text-foreground transition-colors">
@@ -143,7 +144,7 @@ const {
               </ul>
             </div>
             <div class="space-y-3">
-              <h4 class="font-medium">Legal</h4>
+              <H4 client:visible>Legal</H4>
               <ul class="space-y-2 text-sm text-muted-foreground">
                 <li>
                   <a href="/privacy" class="hover:text-foreground transition-colors">

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { Button, Card, CardContent, CardDescription, CardHeader, CardTitle } from '@repo/ui';
+import { Button, Card, CardContent, CardDescription, CardHeader, CardTitle, H1, H2 } from '@repo/ui';
 
 const features = [
   {
@@ -46,9 +46,9 @@ const technologies = [
   <!-- Hero Section -->
   <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/20">
     <div class="container mx-auto text-center">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+      <H1 client:visible class="mb-6" align="center">
         React Starter Kit
-      </h1>
+      </H1>
       <p class="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
         Modern full-stack web application template optimized for serverless
         deployment to CDN edge locations. Built with React, TypeScript, and
@@ -81,9 +81,9 @@ const technologies = [
   <section class="py-20 px-4 sm:px-6 lg:px-8">
     <div class="container mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold tracking-tight mb-4">
+        <H2 client:visible class="mb-4" align="center">
           Everything you need to build modern web apps
-        </h2>
+        </H2>
         <p class="text-muted-foreground text-lg max-w-2xl mx-auto">
           React Starter Kit provides a solid foundation with best practices,
           modern tooling, and optimized performance out of the box.
@@ -109,9 +109,9 @@ const technologies = [
   <!-- Tech Stack Section -->
   <section class="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold tracking-tight mb-4">
+      <H2 client:visible class="mb-4" align="center">
         Built with Modern Technologies
-      </h2>
+      </H2>
       <p class="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
         Carefully selected technologies that work together seamlessly
       </p>
@@ -129,9 +129,9 @@ const technologies = [
   <!-- CTA Section -->
   <section class="py-20 px-4 sm:px-6 lg:px-8">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold tracking-tight mb-4">
+      <H2 client:visible class="mb-4" align="center">
         Ready to start building?
-      </h2>
+      </H2>
       <p class="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
         Get started with React Starter Kit today and build your next project
         with confidence.

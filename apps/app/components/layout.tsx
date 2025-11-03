@@ -1,7 +1,7 @@
 /* SPDX-FileCopyrightText: 2014-present Kriasoft */
 /* SPDX-License-Identifier: MIT */
 
-import { Button } from "@repo/ui";
+import { Button, H1, H2 } from "@repo/ui";
 import { Link } from "@tanstack/react-router";
 import {
   Home,
@@ -35,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       >
         <div className="h-full flex flex-col">
           <div className="h-14 flex items-center px-4 border-b">
-            <h2 className="font-semibold text-lg">Console</h2>
+            <H2 className="font-semibold text-lg">Console</H2>
           </div>
           <nav className="flex-1 p-4 space-y-1">
             {sidebarItems.map((item) => (
@@ -84,7 +84,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </Button>
 
           <div className="flex-1 flex items-center gap-4">
-            <h1 className="text-lg font-semibold">Application</h1>
+            <H1 className="text-lg font-semibold">Application</H1>
           </div>
 
           <div className="flex items-center gap-2">

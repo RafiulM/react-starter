@@ -7,6 +7,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
+  H2,
 } from "@repo/ui";
 import { createFileRoute } from "@tanstack/react-router";
 import { Activity, Users, FileText, TrendingUp } from "lucide-react";
@@ -46,7 +47,7 @@ function Dashboard() {
   return (
     <div className="p-6 space-y-6">
       <div>
-        <h2 className="text-2xl font-bold">Dashboard</h2>
+        <H2>Dashboard</H2>
         <p className="text-muted-foreground">
           Welcome back! Here's an overview of your application.
         </p>
